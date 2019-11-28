@@ -123,3 +123,10 @@ form { font-size: 0.8rem; }
   margin: 0 75px;
   width: fit-content;
 }
+  .canvas-container h6 {
+    font-size: 0.8rem;
+    margin: 5px 0 0 0;
+  }
+    .canvas-container h6 a {
+      font-weight: 400;
+    }
