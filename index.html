@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Riso Color Sandbox</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <nav>
+      <div class="d-flex justify-content-between">
+        <p class="font-weight-bold">Riso Color Sandbox</p>
+        <div class="d-flex align-items-center">
+          <h6>(More Colors!)</h6>
+          <h4>
+            <a data-toggle="collapse" href="#navbarCollapse" aria-expanded="false" aria-controls="navbarCollapse">
+              &nbsp;&#9662;
+            </a>
+          </h4>
+        </div>
+      </div>
+
+      <div id="navbarCollapse" class="collapse">
+        <form></form>
+        <h6>See more information about these colors at <a href="http://stencil.wiki/colors" target="_blank">stencil.wiki</a>!</h6>
+      </div>
+    </nav>
+
+    <div class="d-flex justify-content-center">
+      <form>
+        <div id="colorButtonsContainer"></div>
+        <br />
+
+        <label for="opacity255">Opacity (0 - 255):</label><br />
+        <input id="opacity255" type="number" min="0" max="255" value="255" />
+        <br /><br /><br />
+
+        <button type="button" name="clear">Clear</button><br />
+        <button type="button" name="saveImage">Save Image</button><br />
+        <button type="button" name="saveRiso">Save Riso</button><br />
+      </form>
+
+      <div id="risoColorSandbox" class="canvas-container"></div>
+
+      <form>
+        <label>Ellipse Size</label>
+        <div class="d-flex">
+          <datalist id="ellipseSizes">
+            <option value="250"></option>
+            <option value="225"></option>
+            <option value="200"></option>
+            <option value="175"></option>
+            <option value="150"></option>
+            <option value="125"></option>
+            <option value="100"></option>
+            <option value="75"></option>
+            <option value="50"></option>
+            <option value="25"></option>
+          </datalist>
+          <div id="rangeLabels">
+            <p>250px</p>
+            <p>225px</p>
+            <p>200px</p>
+            <p>175px</p>
+            <p>150px</p>
+            <p>125px</p>
+            <p>100px</p>
+            <p>75px</p>
+            <p>50px</p>
+            <p>25px</p>
+          </div>
+          <input id="ellipseRange" type="range" list="ellipseSizes" step="25" min="25" max="250" value="100" orient="vertical">
+        </div>
+      </form>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+    <script type="text/javascript" src="p5.riso.js"></script>
+
+    <script type="text/javascript" src="risocolors_pretty_names.js"></script>
+    <script type="text/javascript" src="riso_color_sandbox.js"></script>
+  </body>
+</html>

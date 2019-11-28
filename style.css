@@ -1,0 +1,125 @@
+body {
+  background-color: rgb(245, 245, 245);
+  font-family: "Courier New", serif;
+  margin: 0;
+  padding: 75px 0 25px 0;
+}
+
+/* Navbar */
+nav {
+  background-color: #fff;
+  left: 0;
+  padding: 10px 25px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+  nav h4,
+  nav h6,
+  nav p {
+    margin: 0;
+  }
+
+  h6 { font-size: 0.9rem; }
+  a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    transition: ease 0.2s;
+  }
+    a:hover {
+      color: #000;
+      opacity: 0.65;
+      text-decoration: none;
+    }
+
+/* Form */
+form { font-size: 0.8rem; }
+
+  /* Form: Navbar */
+  #navbarCollapse form { padding-top: 15px; }
+
+    #navbarCollapse form .checkbox-container {
+      border-radius: 3px 0 0 3px;
+      display: inline-block;
+      margin-bottom: 15px;
+      padding: 2px 0 4px 5px;
+      vertical-align: middle;
+    }
+
+    #navbarCollapse form input,
+    #navbarCollapse form label {
+      cursor: pointer;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    #navbarCollapse form label {
+      border-radius: 0 3px 3px 0;
+      color: #fff;
+      margin-bottom: 15px;
+      padding: 3px 5px;
+    }
+
+      #navbarCollapse form label[for="all_WHITE"],
+      #navbarCollapse form label[for="all_CLEARMEDIUM"] {
+        color: #000;
+      }
+
+  /* Form: Color Buttons Container */
+  form #colorButtonsContainer input,
+  form #colorButtonsContainer label {
+    cursor: pointer;
+    margin-bottom: 10px;
+    vertical-align: middle;
+  }
+
+  form #colorButtonsContainer label {
+    border-radius: 3px;
+    display: inline-block;
+    padding: 5px;
+    width: 77%;
+  }
+
+  form input:not([type="radio"]):not([type="checkbox"]),
+  form button {
+    background: #fff;
+    border: none;
+    font-family: "Courier New", serif;
+    margin-top: 5px;
+    padding: 7.5px 10px;
+    width: 100%;
+  }
+
+  input[type="range"] {
+    display: block;
+    height: 300px;
+    -webkit-appearance: slider-vertical;
+    width: 40px !important;
+  }
+
+  #rangeLabels {
+    display: block;
+    height: 300px;
+    padding-top: 10px;
+    text-align: right;
+  }
+    #rangeLabels p {
+      font-size: 12px;
+      height: 30.15px;
+      margin: 0;
+      vertical-align: text-top;
+    }
+
+  form button {
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: ease 0.2s;
+  }
+    form button:hover { opacity: 0.65; }
+
+/* Canvas */
+.canvas-container {
+  margin: 0 75px;
+  width: fit-content;
+}
